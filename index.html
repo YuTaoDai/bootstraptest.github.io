@@ -1,0 +1,334 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<style type="text/css">
+.scroll{
+	cursor: pointer
+}
+</style>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http:///fonts.useso.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<link href='http:///fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,800' rel='stylesheet' type='text/css'><link href='http:///fonts.useso.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+ <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+<!---End-smoth-scrolling---->
+<!------ Light Box ------>
+    <link rel="stylesheet" href="css/swipebox.css">
+ <script src="js/scripts.js"></script> 
+    <script src="js/jquery.swipebox.min.js"></script> 
+    <script type="text/javascript">
+		jQuery(function($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+    <!------ Eng Light Box ------>	
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	nav: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true
+      });
+    });
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/style4.css" />
+<script type="text/javascript">
+		// Don't use this code on your site
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-7243260-2']);
+ 		_gaq.push(['_trackPageview']);
+  		(function() {
+    			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+	<!--Animation-->
+<script src="js/wow.min.js"></script>
+<link href="css/animate.css" rel='stylesheet' type='text/css' />
+
+<!---/End-Animation---->
+	</head>
+<body>
+	<div class="header-banner" id="head">
+		  <div class="slider">
+	    <div class="callbacks_container">
+	      <ul class="rslides" id="slider">
+	        <li>
+	          <img src="images/11.jpg" alt="">
+	          <div class="caption wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;border-color: #333">
+	          	<div class="logo">
+	          		<a href="index.html">Sports</a>
+	          		</div>
+	          	<h3>shoes</h3>
+	          </div>
+	        </li>
+	        <li>
+	          <img src="images/12.jpg" alt="">
+	        	 <div class="caption wow bounceIn animated" data-wow-delay="0.4s" style="border-color: #333;visibility: visible; -webkit-animation-delay: 0.4s;">
+	        	 	<div class="logo">
+	          		<a href="index.html">Sports</a>
+	          		</div>
+	        	    <h3>shoes</h3>
+                 </div>
+	         </li>
+	        <li>
+	          <img src="images/13.jpg" alt="">
+	          <div class="caption wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;border-color: #333">
+	          	<div class="logo">
+	          		<a href="index.html">Sports</a>
+	          		</div>
+	          	<h3>shoes</h3>
+	          	</div>
+	        </li>
+	        <li>
+	          <img src="images/14.jpg" alt="">
+	          <div class="caption wow bounceInLeft animated" data-wow-delay="0.4s" style="border-color: #333;visibility: visible; -webkit-animation-delay: 0.4s;">
+	          	<div class="logo">
+	          		<a href="index.html-">Sports</a>
+	          		</div>
+	          	<h3>shoes</h3>
+	          	</div>
+	        </li>
+	      </ul>
+	  </div>
+  </div>
+	<div class="header-bottom">
+			<div class="fixed-header"  style="background-color: #101010">
+			<div class="container">
+				<div class="top-menu">
+					<span class="menu"><img src="images/nav.png" alt=""/> </span>
+                     <ul>
+						<nav class="cl-effect-5">
+					 <li><a class="scroll">主页</a></li>
+					 <li><a class="scroll">服务</a></li>
+					 <li><a class="scroll">关于</a></li>
+					 <li><a class="scroll">菜单</a></li>
+
+					 <li><a class="scroll">位置</a></li>
+					 </nav>
+				 </ul>
+				 <!-- script for menu -->
+
+		 <script>
+		
+		 </script>
+					<!-- //script for menu -->
+
+						<script>
+		$(document).ready(function() {
+			 var navoffeset=$(".header-bottom").offset().top;
+			 $(window).scroll(function(){
+				var scrollpos=$(window).scrollTop(); 
+				if(scrollpos >=navoffeset){
+					$(".header-bottom").addClass("fixed");
+				}else{
+					$(".header-bottom").removeClass("fixed");
+				}
+			 });
+		});
+		</script>
+					<!-- //script-for sticky-nav -->		
+			 </div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+		<div class="service-section" id="service">
+			<div class="container">
+				<h2>优秀的团队 专业的服务</h2>
+				<p>开拓、创新，立足市场求发展；优质、高效，用心服务为用户，用我们真诚的微笑换取客户对我们服务的满意</p>
+				<a href="#" class="button1">了解更多</a>
+				</div>
+			</div>
+
+				<div class="about-section" id="about">
+					<div class="container">
+						<h3>关于我们 </h3>
+						 <div class="main wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;"> 
+               	            <div class="view view-fourth ">
+                                <img src="images/14.jpg" />
+                                <div class="mask">
+                                    <h2>自然缓震穿着体验</h2>
+                                    <p>男子跑步鞋兼具轻质缓震性能与有力支撑效果，为你缔造自然跑步体验，非常适合初次接触的跑步者。六边形弯曲凹槽通过六个弯曲点设计，为双足带来全方位自如律动体验。</p>
+                                </div>
+                            </div>
+                <div class="view view-fourth view1">
+                    <img src="images/13.jpg" />
+                    <div class="mask">
+                        <h2>自然缓震穿着体验</h2>
+                        <p>男子跑步鞋兼具轻质缓震性能与有力支撑效果，为你缔造自然跑步体验，非常适合初次接触的跑步者。六边形弯曲凹槽通过六个弯曲点设计，为双足带来全方位自如律动体验。</p>
+                    </div>
+                </div>
+                <div class="view view-fourth">
+                    <img src="images/12.jpg" />
+                    <div class="mask">
+                        <h2>自然缓震穿着体验</h2>
+                        <p>男子跑步鞋兼具轻质缓震性能与有力支撑效果，为你缔造自然跑步体验，非常适合初次接触的跑步者。六边形弯曲凹槽通过六个弯曲点设计，为双足带来全方位自如律动体验。</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                </div>
+
+                </div>
+				</div>
+				<div class="menu-section">
+					<div class="container">
+						<h3>特色商品</h3>
+						<div class="menu-grids wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+							<div class="col-md-3 menu-grid">
+								<img src="images/15.jpg" class="img-responsive" alt="" />
+								<div class="menu-info">
+									<h4>$04.<sup>99</sup></h4>
+									<h5>CUM SOCIIS NATOQUE .</h5>
+									</div>
+								</div>
+								<div class="col-md-3 menu-grid ">
+								<img src="images/16.jpg" class="img-responsive" alt="" />
+								<div class="menu-info">
+									<h4>$05.<sup>99</sup></h4>
+									<h5>Lorem ipsum dolo .</h5>
+									</div>
+								</div>
+								<div class="col-md-3 menu-grid menu1 ">
+								<img src="images/17.jpg" class="img-responsive" alt="" />
+								<div class="menu-info">
+									<h4>$09.<sup>99</sup></h4>
+									<h5>CUM SOCIIS NATOQUE .</h5>
+									</div>
+								</div>
+								<div class="col-md-3 menu-grid menu1">
+								<img src="images/18.jpg" class="img-responsive" alt="" />
+								<div class="menu-info">
+									<h4>$19.<sup>99</sup></h4>
+									<h5>Lorem ipsum dolo .</h5>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				<div class="test-section" id="tests">
+					<div class="container">
+						<h3>推荐</h3>
+						<div class="test-grids ">
+							<div class="test-grid1 wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+							<div class="col-md-5 test-left test1">
+								<img src="images/19.jpg" class="img-responsive" alt="" />
+								<div class="textbox">
+								<p>Aenean nonummyen</p>
+								<h4>$ 09.<sup>95</sup></h4>
+								</div>
+								</div>
+								<div class="col-md-7 test-right">
+								<h4>"自然缓震穿着体验</h4>
+								<p>男子跑步鞋兼具轻质缓震性能与有力支撑效果，为你缔造自然跑步体验，非常适合初次接触的跑步者。六边形弯曲凹槽通过六个弯曲点设计，为双足带来全方位自如律动体验。搭载轻薄中底和圆形鞋跟，结合后跟与前掌的 8 毫米高差设计，助你获得自然流畅的步履体验工程网眼鞋面具备传统鞋款的舒适贴合感，同时贴合足部轮廓，在运动中为你提供有力支撑。飞线结合鞋带设计，实现强大支撑与随行而动的贴合体验。</p>
+								</div>
+								<div class="clearfix"> </div>
+								</div>
+								<div class="test-grid2 wow bounceInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+							   <div class="col-md-7 test-left01">
+								<h4>"抵御恶劣天气，塑就个性风采</h4>
+								<p>选择契合鞋型的耐磨材质，塑就自如律动表现。防风雨性能为你提供周全防护。专属配色、夜光和反光选项，则助你演绎个性风采。或选择耐磨天然橡胶鞋底。灵感源自靴款的细节设计助你强势抵御雨雪侵袭：Duckboot 外底采用拒水材料，卓越抓地设计与反光细节匠心结合，助力抵御各种恶劣天气，赋予你周全防护泼墨中底，让你在雨雪天气展现脱颖而出的酷炫风采。</p></div>
+							   <div class="col-md-5 test-right01 test1">
+								<img src="images/20.jpg" class="img-responsive" alt="" />
+								<div class="textbox textbox1">
+								<p>Natoque penatibus</p>
+								<h4>$ 19.<sup>95</sup></h4>
+								</div>
+								</div>
+								<div class="clearfix"> </div>
+								</div>
+								<div class="test-grid3 wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+							<div class="col-md-5 test-left test1">
+								<img src="images/21.jpg" class="img-responsive" alt="" />
+								<div class="textbox">
+								<p>Aenean nonummyen</p>
+								<h4>$ 29.<sup>95</sup></h4>
+								</div>
+								</div>
+								<div class="col-md-7 test-right">
+								<h4>"复刻经典，锐意革新</h4>
+								<p> 女子运动鞋巧妙融入印花细节，锐意革新经典元年款篮球战靴的非凡风采，高筒鞋帮与稳固的鞋身结构则出色承袭元年设计的经典运动外观和耐久舒适体验,织物和人造革组合鞋面，耐久舒适,高压成型结构使外底与鞋面无缝接合，缔造经典造型的同时带来卓越板触感,橡胶外底，缔造出色抓地力与耐磨性,从简约的高帮帆布设计再到成熟的皮革中帮、休闲低帮设计，这些鞋款随着时间的推移风采益彰.</p></div>
+								<div class="clearfix"> </div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				<div class="google" id="location">
+
+			<div class="contact-section">
+				<div class="container">
+					<h3>联系我们</h3>
+					<div class="contact-grids wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">">
+			<div class="col-md-4 contactgrid">
+				<input type="text" class="text" value=" 姓名" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = ' name';}">
+				</div>
+				<div class="col-md-4 contactgrid">
+				<input type="text" class="text" value="邮箱" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'email';}">
+				</div>
+
+				<div class="col-md-8 contactgrid1">
+				<textarea onFocus="if(this.value == '反馈信息') this.value='';" onBlur="if(this.value == '') this.value='Your Message';" >反馈信息</textarea>
+				</div>
+				<div class="col-md-4 contactgrid2">
+				<input type="button" value="提交">
+			   </div>
+			   <div class="clearfix"></div>
+				</div>
+				</div>
+				</div>
+			</div>
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-top wow bounceInRight animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">">
+								<div class="social-icons">
+										<a href="#"><i class="icon4"></i></a>
+										<a href="#"><i class="icon5"></i></a>
+										<a href="#"><i class="icon6"></i></a>
+									</div>
+								</div>
+							<div class="footer-bottom">
+						<p>Copyright &copy; 2015.Company name All rights reserved.</p>
+						</div>
+						<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							$().UItoTop({ easingType: 'easeOutQuart' });
+						});
+					</script>
+				<a class="scroll" href="#head" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+					</div>
+				</div>
+    </div>
+    </div>
+</body>
+</html>
